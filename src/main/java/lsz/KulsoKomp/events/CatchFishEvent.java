@@ -1,4 +1,4 @@
-package lsz.KulsoKomp.components;
+package lsz.KulsoKomp.events;
 
 import com.google.common.eventbus.EventBus;
 
