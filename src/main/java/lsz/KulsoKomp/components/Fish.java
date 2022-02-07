@@ -12,4 +12,8 @@ public class Fish {
     public void setEventBus(EventBus eventBus) {
         this.eventBus = eventBus;
     }
+
+    public void catchFish(){
+        this.eventBus.post(new CatchFishEvent());
+    }
 }

@@ -5,8 +5,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class EventbusConfiguration {
-    public EventbusConfiguration() {
+public class EventBusConfiguration {
+    public EventBusConfiguration() {
         System.out.println("EventbusConfiguration created");
     }
 
