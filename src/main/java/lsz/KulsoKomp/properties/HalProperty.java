@@ -10,5 +10,9 @@ import org.springframework.context.annotation.PropertySource;
 @PropertySource("classpath:application.properties")
 @ConfigurationProperties(prefix = "hal")
 public class HalProperty {
-    private @Getter @Setter Integer size;
+    private @Getter Integer size;
+    public void setSize(Integer size) {
+        if(size < 10 || size > 100){throw new IllegalArgumentException();}
+        else {this.size = size;}
+    }
 }
